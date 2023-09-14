@@ -1,4 +1,4 @@
-name: GitHub Actions
+# name: GitHub Actions
 
 # on: push
 
@@ -6,13 +6,13 @@ name: GitHub Actions
 #   schedule:
 #     - cron: '50 21 * * *'
 
-jobs:
-  run-python-script:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Run script
-        run: |
-          chmod +x ./dist/test
-          ./dist/test ${{ secrets.SCRIPT_ARGV }}
+# jobs:
+#   run-python-script:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#       - name: Run script
+#         run: |
+#           chmod +x ./dist/test
+#           ./dist/test ${{ secrets.SCRIPT_ARGV }}
